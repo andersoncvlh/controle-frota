@@ -10,6 +10,7 @@ import { DirectionsService } from './directions/directions.service';
   providers: [PlacesService, {
     provide: GoogleMapsClient,
     useValue: new GoogleMapsClient()
-  }, DirectionsService]
+  }, DirectionsService],
+  exports: [DirectionsService]
 })
-export class MapsModule {}
+export class MapsModule { }
