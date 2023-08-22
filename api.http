@@ -18,3 +18,6 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/places?text=rua 210, nova metropole, caucaia
+
+### pegar direcoes entre dois ponts
+GET http://localhost:3000/directions?originId=xxx&destinationId=yyy
